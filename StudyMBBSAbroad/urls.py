@@ -21,7 +21,7 @@ from .views import landing_page, submit_form
 from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('header/', views.Header, name='header'),
+ 
     path('', landing_page, name='landing_page'),
     path('submit_form/', submit_form, name='submit_form'),
 ]
