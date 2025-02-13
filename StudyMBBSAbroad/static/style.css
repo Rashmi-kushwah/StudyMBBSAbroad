@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background: url('images/banner.jpg') center/cover no-repeat;
+}
+input, select {
+    border-radius: 5px;
+    padding: 8px;
+}
+button:hover {
+    background-color: #1e40af;
+}
