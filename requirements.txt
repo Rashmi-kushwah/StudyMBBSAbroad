@@ -1,15 +1,5 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "manage.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "manage.py"
-    }
-  ]
-}
+Django>=4.0,<5.0
+djangorestframework
+gunicorn
+whitenoise
+psycopg2-binary
