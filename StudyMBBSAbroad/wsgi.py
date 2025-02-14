@@ -14,3 +14,5 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'StudyMBBSAbroad.settings')
 
 application = get_wsgi_application()
+# Vercel ke liye handler define karein
+app = application
