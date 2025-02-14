@@ -55,7 +55,7 @@ ROOT_URLCONF = 'StudyMBBSAbroad.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:\DJANGO PRACTICE FOLDER\StudyMBBSAbroad\StudyMBBSAbroad\Templates'],
+        'DIRS': ['D:\DJANGO PRACTICE FOLDER\StudyMBBSAbroad\Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

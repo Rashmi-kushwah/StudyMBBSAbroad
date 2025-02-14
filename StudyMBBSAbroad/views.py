@@ -1,16 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-
-
-
 from django.shortcuts import render
 from django.http import JsonResponse
+from  studyapp.models import Lead
 
 def landing_page(request):
     return render(request, 'index.html')
 
-from  studyapp.models import Lead
+
 
 def submit_form(request):
     if request.method == 'POST':

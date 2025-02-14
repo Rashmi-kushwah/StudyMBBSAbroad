@@ -17,11 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
-from .views import landing_page, submit_form
+
 from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
  
-    path('', landing_page, name='landing_page'),
-    path('submit_form/', submit_form, name='submit_form'),
+    path('',views.landing_page, name='landing_page'),
+    path('submit_form/',views.submit_form, name='submit_form'),
 ]
