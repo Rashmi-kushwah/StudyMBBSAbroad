@@ -52,13 +52,15 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'StudyMBBSAbroad.urls'
+import os
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:/DJANGO PRACTICE FOLDER/StudyMBBSAbroad/Templates'],
-
-
+        'DIRS': [os.path.join(BASE_DIR, 'Templates')],  # ✅ Corrected path
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,6 +72,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'StudyMBBSAbroad.wsgi.application'
 
